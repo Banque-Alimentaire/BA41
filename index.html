@@ -36,7 +36,7 @@
         <script src="data/TauxdechmageLoiretCher_4.js"></script>
         <script src="data/MdianeduniveaudevieLoiretCher_5.js"></script>
         <script src="data/ZRR_6.js"></script>
-        <script src="data/Zonesblanchedelaidealimentaire_7.js"></script>
+        <script src="data/Zonesblanchesdelaidealimentaire_7.js"></script>
         <script src="data/Communesavecaidealimentaire_8.js"></script>
         <script src="data/RestosduCoeur41_9.js"></script>
         <script src="data/SecoursPopulaire41_10.js"></script>
@@ -503,7 +503,7 @@
             style: style_ZRR_6_0,
         });
         bounds_group.addLayer(layer_ZRR_6);
-        function pop_Zonesblanchedelaidealimentaire_7(feature, layer) {
+        function pop_Zonesblanchesdelaidealimentaire_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Commune</th>\
@@ -513,9 +513,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Zonesblanchedelaidealimentaire_7_0() {
+        function style_Zonesblanchesdelaidealimentaire_7_0() {
             return {
-                pane: 'pane_Zonesblanchedelaidealimentaire_7',
+                pane: 'pane_Zonesblanchesdelaidealimentaire_7',
                 opacity: 1,
                 color: 'rgba(27,27,27,0.0)',
                 dashArray: '',
@@ -528,20 +528,20 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Zonesblanchedelaidealimentaire_7');
-        map.getPane('pane_Zonesblanchedelaidealimentaire_7').style.zIndex = 407;
-        map.getPane('pane_Zonesblanchedelaidealimentaire_7').style['mix-blend-mode'] = 'normal';
-        var layer_Zonesblanchedelaidealimentaire_7 = new L.geoJson(json_Zonesblanchedelaidealimentaire_7, {
+        map.createPane('pane_Zonesblanchesdelaidealimentaire_7');
+        map.getPane('pane_Zonesblanchesdelaidealimentaire_7').style.zIndex = 407;
+        map.getPane('pane_Zonesblanchesdelaidealimentaire_7').style['mix-blend-mode'] = 'normal';
+        var layer_Zonesblanchesdelaidealimentaire_7 = new L.geoJson(json_Zonesblanchesdelaidealimentaire_7, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Zonesblanchedelaidealimentaire_7',
-            layerName: 'layer_Zonesblanchedelaidealimentaire_7',
-            pane: 'pane_Zonesblanchedelaidealimentaire_7',
-            onEachFeature: pop_Zonesblanchedelaidealimentaire_7,
-            style: style_Zonesblanchedelaidealimentaire_7_0,
+            dataVar: 'json_Zonesblanchesdelaidealimentaire_7',
+            layerName: 'layer_Zonesblanchesdelaidealimentaire_7',
+            pane: 'pane_Zonesblanchesdelaidealimentaire_7',
+            onEachFeature: pop_Zonesblanchesdelaidealimentaire_7,
+            style: style_Zonesblanchesdelaidealimentaire_7_0,
         });
-        bounds_group.addLayer(layer_Zonesblanchedelaidealimentaire_7);
-        map.addLayer(layer_Zonesblanchedelaidealimentaire_7);
+        bounds_group.addLayer(layer_Zonesblanchesdelaidealimentaire_7);
+        map.addLayer(layer_Zonesblanchesdelaidealimentaire_7);
         function pop_Communesavecaidealimentaire_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1286,7 +1286,7 @@
         bounds_group.addLayer(layer_RgionCentreValdeLoire_20);
         map.addLayer(layer_RgionCentreValdeLoire_20);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/RgionCentreValdeLoire_20.png" /> Région Centre Val de Loire': layer_RgionCentreValdeLoire_20,'<img src="legend/LoiretCher_19.png" /> Loir et Cher ': layer_LoiretCher_19,'<img src="legend/BACVL_18.png" /> BA CVL': layer_BACVL_18,'<img src="legend/Epiceriesitinrantespartenaires41_17.png" /> Epiceries itinérantes partenaires 41': layer_Epiceriesitinrantespartenaires41_17,'<img src="legend/Epiceriessocialespartenaires41_16.png" /> Epiceries sociales partenaires 41': layer_Epiceriessocialespartenaires41_16,'<img src="legend/CCASpartenaires41_15.png" /> CCAS partenaires 41': layer_CCASpartenaires41_15,'<img src="legend/41Associationspartenaires_14.png" /> 41 Associations partenaires': layer_41Associationspartenaires_14,'<img src="legend/CroixRouge41_13.png" /> Croix Rouge 41': layer_CroixRouge41_13,'<img src="legend/SecoursCatholique41_12.png" /> Secours Catholique 41': layer_SecoursCatholique41_12,'<img src="legend/SSVP41_11.png" /> SSVP 41': layer_SSVP41_11,'<img src="legend/SecoursPopulaire41_10.png" /> Secours Populaire 41': layer_SecoursPopulaire41_10,'<img src="legend/RestosduCoeur41_9.png" /> Restos du Coeur 41': layer_RestosduCoeur41_9,'<img src="legend/Communesavecaidealimentaire_8.png" /> Communes avec aide alimentaire ': layer_Communesavecaidealimentaire_8,'<img src="legend/Zonesblanchedelaidealimentaire_7.png" /> Zones blanche de l\'aide alimentaire ': layer_Zonesblanchedelaidealimentaire_7,'<img src="legend/ZRR_6.png" /> ZRR ': layer_ZRR_6,'Médiane du niveau de vie (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_15430206480.png" /></td><td>15430 - 20648</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_20648217801.png" /></td><td>20648 - 21780</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_21780228642.png" /></td><td>21780 - 22864</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_22864241443.png" /></td><td>22864 - 24144</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_24144334404.png" /></td><td>24144 - 33440</td></tr></table>': layer_MdianeduniveaudevieLoiretCher_5,'Taux de chômage (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_0760.png" /></td><td>0 - 7,6</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_76971.png" /></td><td>7,6 - 9,7</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_971242.png" /></td><td>9,7 - 12,4</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_1244063.png" /></td><td>12,4 - 40,6</td></tr></table>': layer_TauxdechmageLoiretCher_4,'PAT (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_PaysValléeducheretduRomorantinais0.png" /></td><td>Pays Vallée du cher et du Romorantinais</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysdesChâteaux1.png" /></td><td>Syndicat Mixte du Pays des Châteaux</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysVendômois2.png" /></td><td>Syndicat Mixte du Pays Vendômois</td></tr></table>': layer_PATLoiretCher_3,'<img src="legend/CommunesLoiretCher_2.png" /> Communes - Loir et Cher ': layer_CommunesLoiretCher_2,'<img src="legend/EPCI41_1.png" /> EPCI 41': layer_EPCI41_1,"Google Road": layer_GoogleRoad_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/RgionCentreValdeLoire_20.png" /> Région Centre Val de Loire': layer_RgionCentreValdeLoire_20,'<img src="legend/LoiretCher_19.png" /> Loir et Cher ': layer_LoiretCher_19,'<img src="legend/BACVL_18.png" /> BA CVL': layer_BACVL_18,'<img src="legend/Epiceriesitinrantespartenaires41_17.png" /> Epiceries itinérantes partenaires 41': layer_Epiceriesitinrantespartenaires41_17,'<img src="legend/Epiceriessocialespartenaires41_16.png" /> Epiceries sociales partenaires 41': layer_Epiceriessocialespartenaires41_16,'<img src="legend/CCASpartenaires41_15.png" /> CCAS partenaires 41': layer_CCASpartenaires41_15,'<img src="legend/41Associationspartenaires_14.png" /> 41 Associations partenaires': layer_41Associationspartenaires_14,'<img src="legend/CroixRouge41_13.png" /> Croix Rouge 41': layer_CroixRouge41_13,'<img src="legend/SecoursCatholique41_12.png" /> Secours Catholique 41': layer_SecoursCatholique41_12,'<img src="legend/SSVP41_11.png" /> SSVP 41': layer_SSVP41_11,'<img src="legend/SecoursPopulaire41_10.png" /> Secours Populaire 41': layer_SecoursPopulaire41_10,'<img src="legend/RestosduCoeur41_9.png" /> Restos du Coeur 41': layer_RestosduCoeur41_9,'<img src="legend/Communesavecaidealimentaire_8.png" /> Communes avec aide alimentaire ': layer_Communesavecaidealimentaire_8,'<img src="legend/Zonesblanchesdelaidealimentaire_7.png" /> Zones blanches de l\'aide alimentaire ': layer_Zonesblanchesdelaidealimentaire_7,'<img src="legend/ZRR_6.png" /> ZRR ': layer_ZRR_6,'Médiane du niveau de vie (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_15430206480.png" /></td><td>15430 - 20648</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_20648217801.png" /></td><td>20648 - 21780</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_21780228642.png" /></td><td>21780 - 22864</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_22864241443.png" /></td><td>22864 - 24144</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_24144334404.png" /></td><td>24144 - 33440</td></tr></table>': layer_MdianeduniveaudevieLoiretCher_5,'Taux de chômage (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_0760.png" /></td><td>0 - 7,6</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_76971.png" /></td><td>7,6 - 9,7</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_971242.png" /></td><td>9,7 - 12,4</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_1244063.png" /></td><td>12,4 - 40,6</td></tr></table>': layer_TauxdechmageLoiretCher_4,'PAT (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_PaysValléeducheretduRomorantinais0.png" /></td><td>Pays Vallée du cher et du Romorantinais</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysdesChâteaux1.png" /></td><td>Syndicat Mixte du Pays des Châteaux</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysVendômois2.png" /></td><td>Syndicat Mixte du Pays Vendômois</td></tr></table>': layer_PATLoiretCher_3,'<img src="legend/CommunesLoiretCher_2.png" /> Communes - Loir et Cher ': layer_CommunesLoiretCher_2,'<img src="legend/EPCI41_1.png" /> EPCI 41': layer_EPCI41_1,"Google Road": layer_GoogleRoad_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>

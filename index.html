@@ -38,22 +38,22 @@
         <script src="data/ZRR_6.js"></script>
         <script src="data/Zonesblanchesdelaidealimentaire_7.js"></script>
         <script src="data/Communesavecaidealimentaire_8.js"></script>
-        <script src="data/RestosduCoeur41_9.js"></script>
-        <script src="data/SecoursPopulaire41_10.js"></script>
-        <script src="data/SSVP41_11.js"></script>
-        <script src="data/SecoursCatholique41_12.js"></script>
-        <script src="data/CroixRouge41_13.js"></script>
-        <script src="data/41Associationspartenaires_14.js"></script>
+        <script src="data/RestosduCoeur_9.js"></script>
+        <script src="data/SecoursPopulaire_10.js"></script>
+        <script src="data/SSVP_11.js"></script>
+        <script src="data/SecoursCatholique_12.js"></script>
+        <script src="data/CroixRouge_13.js"></script>
+        <script src="data/Associationspartenaires_14.js"></script>
         <script src="data/CCASpartenaires41_15.js"></script>
-        <script src="data/Epiceriessocialespartenaires41_16.js"></script>
-        <script src="data/Epiceriesitinrantespartenaires41_17.js"></script>
+        <script src="data/Epiceriessocialespartenaires_16.js"></script>
+        <script src="data/Epiceriesitinrantespartenaires_17.js"></script>
         <script src="data/BACVL_18.js"></script>
         <script src="data/LoiretCher_19.js"></script>
         <script src="data/RgionCentreValdeLoire_20.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[47.0713472123613,0.2399064520343876],[48.27884992196537,3.4320338847977174]]);
+        }).fitBounds([[47.0713472123613,0.23452685639936255],[48.27884992196537,3.437413480432745]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -581,7 +581,7 @@
         });
         bounds_group.addLayer(layer_Communesavecaidealimentaire_8);
         map.addLayer(layer_Communesavecaidealimentaire_8);
-        function pop_RestosduCoeur41_9(feature, layer) {
+        function pop_RestosduCoeur_9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Association</th>\
@@ -611,39 +611,39 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_RestosduCoeur41_9_0() {
+        function style_RestosduCoeur_9_0() {
             return {
-                pane: 'pane_RestosduCoeur41_9',
+                pane: 'pane_RestosduCoeur_9',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/Restos_du_coeur_Logo.svg',
+            iconUrl: 'markers/RDC (fond blanc).svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_RestosduCoeur41_9');
-        map.getPane('pane_RestosduCoeur41_9').style.zIndex = 409;
-        map.getPane('pane_RestosduCoeur41_9').style['mix-blend-mode'] = 'normal';
-        var layer_RestosduCoeur41_9 = new L.geoJson(json_RestosduCoeur41_9, {
+        map.createPane('pane_RestosduCoeur_9');
+        map.getPane('pane_RestosduCoeur_9').style.zIndex = 409;
+        map.getPane('pane_RestosduCoeur_9').style['mix-blend-mode'] = 'normal';
+        var layer_RestosduCoeur_9 = new L.geoJson(json_RestosduCoeur_9, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_RestosduCoeur41_9',
-            layerName: 'layer_RestosduCoeur41_9',
-            pane: 'pane_RestosduCoeur41_9',
-            onEachFeature: pop_RestosduCoeur41_9,
+            dataVar: 'json_RestosduCoeur_9',
+            layerName: 'layer_RestosduCoeur_9',
+            pane: 'pane_RestosduCoeur_9',
+            onEachFeature: pop_RestosduCoeur_9,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_RestosduCoeur41_9_0(feature));
+                return L.marker(latlng, style_RestosduCoeur_9_0(feature));
             },
         });
-        bounds_group.addLayer(layer_RestosduCoeur41_9);
-        map.addLayer(layer_RestosduCoeur41_9);
-        function pop_SecoursPopulaire41_10(feature, layer) {
+        bounds_group.addLayer(layer_RestosduCoeur_9);
+        map.addLayer(layer_RestosduCoeur_9);
+        function pop_SecoursPopulaire_10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Association</th>\
@@ -681,39 +681,39 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_SecoursPopulaire41_10_0() {
+        function style_SecoursPopulaire_10_0() {
             return {
-                pane: 'pane_SecoursPopulaire41_10',
+                pane: 'pane_SecoursPopulaire_10',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/secours populaire.svg',
-            iconSize: [22.799999999999997, 22.799999999999997]
+            iconUrl: 'markers/Secours Populaire Français.svg',
+            iconSize: [15.959999999999997, 15.959999999999997]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_SecoursPopulaire41_10');
-        map.getPane('pane_SecoursPopulaire41_10').style.zIndex = 410;
-        map.getPane('pane_SecoursPopulaire41_10').style['mix-blend-mode'] = 'normal';
-        var layer_SecoursPopulaire41_10 = new L.geoJson(json_SecoursPopulaire41_10, {
+        map.createPane('pane_SecoursPopulaire_10');
+        map.getPane('pane_SecoursPopulaire_10').style.zIndex = 410;
+        map.getPane('pane_SecoursPopulaire_10').style['mix-blend-mode'] = 'normal';
+        var layer_SecoursPopulaire_10 = new L.geoJson(json_SecoursPopulaire_10, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_SecoursPopulaire41_10',
-            layerName: 'layer_SecoursPopulaire41_10',
-            pane: 'pane_SecoursPopulaire41_10',
-            onEachFeature: pop_SecoursPopulaire41_10,
+            dataVar: 'json_SecoursPopulaire_10',
+            layerName: 'layer_SecoursPopulaire_10',
+            pane: 'pane_SecoursPopulaire_10',
+            onEachFeature: pop_SecoursPopulaire_10,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SecoursPopulaire41_10_0(feature));
+                return L.marker(latlng, style_SecoursPopulaire_10_0(feature));
             },
         });
-        bounds_group.addLayer(layer_SecoursPopulaire41_10);
-        map.addLayer(layer_SecoursPopulaire41_10);
-        function pop_SSVP41_11(feature, layer) {
+        bounds_group.addLayer(layer_SecoursPopulaire_10);
+        map.addLayer(layer_SecoursPopulaire_10);
+        function pop_SSVP_11(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Nom</th>\
@@ -743,39 +743,39 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_SSVP41_11_0() {
+        function style_SSVP_11_0() {
             return {
-                pane: 'pane_SSVP41_11',
+                pane: 'pane_SSVP_11',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/SSVP.svg',
-            iconSize: [19.0, 19.0]
+            iconUrl: 'markers/SSVP (sfb).svg',
+            iconSize: [15.959999999999997, 15.959999999999997]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_SSVP41_11');
-        map.getPane('pane_SSVP41_11').style.zIndex = 411;
-        map.getPane('pane_SSVP41_11').style['mix-blend-mode'] = 'normal';
-        var layer_SSVP41_11 = new L.geoJson(json_SSVP41_11, {
+        map.createPane('pane_SSVP_11');
+        map.getPane('pane_SSVP_11').style.zIndex = 411;
+        map.getPane('pane_SSVP_11').style['mix-blend-mode'] = 'normal';
+        var layer_SSVP_11 = new L.geoJson(json_SSVP_11, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_SSVP41_11',
-            layerName: 'layer_SSVP41_11',
-            pane: 'pane_SSVP41_11',
-            onEachFeature: pop_SSVP41_11,
+            dataVar: 'json_SSVP_11',
+            layerName: 'layer_SSVP_11',
+            pane: 'pane_SSVP_11',
+            onEachFeature: pop_SSVP_11,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SSVP41_11_0(feature));
+                return L.marker(latlng, style_SSVP_11_0(feature));
             },
         });
-        bounds_group.addLayer(layer_SSVP41_11);
-        map.addLayer(layer_SSVP41_11);
-        function pop_SecoursCatholique41_12(feature, layer) {
+        bounds_group.addLayer(layer_SSVP_11);
+        map.addLayer(layer_SSVP_11);
+        function pop_SecoursCatholique_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Association</th>\
@@ -805,39 +805,39 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_SecoursCatholique41_12_0() {
+        function style_SecoursCatholique_12_0() {
             return {
-                pane: 'pane_SecoursCatholique41_12',
+                pane: 'pane_SecoursCatholique_12',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/Secours Catholique.svg',
-            iconSize: [15.2, 15.2]
+            iconUrl: 'markers/Secours Catholique (rond).svg',
+            iconSize: [15.959999999999999, 15.959999999999999]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_SecoursCatholique41_12');
-        map.getPane('pane_SecoursCatholique41_12').style.zIndex = 412;
-        map.getPane('pane_SecoursCatholique41_12').style['mix-blend-mode'] = 'normal';
-        var layer_SecoursCatholique41_12 = new L.geoJson(json_SecoursCatholique41_12, {
+        map.createPane('pane_SecoursCatholique_12');
+        map.getPane('pane_SecoursCatholique_12').style.zIndex = 412;
+        map.getPane('pane_SecoursCatholique_12').style['mix-blend-mode'] = 'normal';
+        var layer_SecoursCatholique_12 = new L.geoJson(json_SecoursCatholique_12, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_SecoursCatholique41_12',
-            layerName: 'layer_SecoursCatholique41_12',
-            pane: 'pane_SecoursCatholique41_12',
-            onEachFeature: pop_SecoursCatholique41_12,
+            dataVar: 'json_SecoursCatholique_12',
+            layerName: 'layer_SecoursCatholique_12',
+            pane: 'pane_SecoursCatholique_12',
+            onEachFeature: pop_SecoursCatholique_12,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SecoursCatholique41_12_0(feature));
+                return L.marker(latlng, style_SecoursCatholique_12_0(feature));
             },
         });
-        bounds_group.addLayer(layer_SecoursCatholique41_12);
-        map.addLayer(layer_SecoursCatholique41_12);
-        function pop_CroixRouge41_13(feature, layer) {
+        bounds_group.addLayer(layer_SecoursCatholique_12);
+        map.addLayer(layer_SecoursCatholique_12);
+        function pop_CroixRouge_13(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Associatio'] !== null ? autolinker.link(feature.properties['Associatio'].toLocaleString()) : '') + '</td>\
@@ -864,39 +864,39 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_CroixRouge41_13_0() {
+        function style_CroixRouge_13_0() {
             return {
-                pane: 'pane_CroixRouge41_13',
+                pane: 'pane_CroixRouge_13',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/CROIX ROUGE.svg',
-            iconSize: [19.0, 19.0]
+            iconUrl: 'markers/croixrouge rond.svg',
+            iconSize: [15.959999999999999, 15.959999999999999]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_CroixRouge41_13');
-        map.getPane('pane_CroixRouge41_13').style.zIndex = 413;
-        map.getPane('pane_CroixRouge41_13').style['mix-blend-mode'] = 'normal';
-        var layer_CroixRouge41_13 = new L.geoJson(json_CroixRouge41_13, {
+        map.createPane('pane_CroixRouge_13');
+        map.getPane('pane_CroixRouge_13').style.zIndex = 413;
+        map.getPane('pane_CroixRouge_13').style['mix-blend-mode'] = 'normal';
+        var layer_CroixRouge_13 = new L.geoJson(json_CroixRouge_13, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CroixRouge41_13',
-            layerName: 'layer_CroixRouge41_13',
-            pane: 'pane_CroixRouge41_13',
-            onEachFeature: pop_CroixRouge41_13,
+            dataVar: 'json_CroixRouge_13',
+            layerName: 'layer_CroixRouge_13',
+            pane: 'pane_CroixRouge_13',
+            onEachFeature: pop_CroixRouge_13,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_CroixRouge41_13_0(feature));
+                return L.marker(latlng, style_CroixRouge_13_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CroixRouge41_13);
-        map.addLayer(layer_CroixRouge41_13);
-        function pop_41Associationspartenaires_14(feature, layer) {
+        bounds_group.addLayer(layer_CroixRouge_13);
+        map.addLayer(layer_CroixRouge_13);
+        function pop_Associationspartenaires_14(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Adresse</th>\
@@ -926,38 +926,42 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_41Associationspartenaires_14_0() {
+        function style_Associationspartenaires_14_0() {
             return {
-                pane: 'pane_41Associationspartenaires_14',
-        rotationAngle: 0.0,
-        rotationOrigin: 'center center',
-        icon: L.icon({
-            iconUrl: 'markers/Banque alimenatire sf.svg',
-            iconSize: [15.2, 15.2]
-        }),
+                pane: 'pane_Associationspartenaires_14',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(255,127,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,127,0,1.0)',
                 interactive: true,
             }
         }
-        map.createPane('pane_41Associationspartenaires_14');
-        map.getPane('pane_41Associationspartenaires_14').style.zIndex = 414;
-        map.getPane('pane_41Associationspartenaires_14').style['mix-blend-mode'] = 'normal';
-        var layer_41Associationspartenaires_14 = new L.geoJson(json_41Associationspartenaires_14, {
+        map.createPane('pane_Associationspartenaires_14');
+        map.getPane('pane_Associationspartenaires_14').style.zIndex = 414;
+        map.getPane('pane_Associationspartenaires_14').style['mix-blend-mode'] = 'normal';
+        var layer_Associationspartenaires_14 = new L.geoJson(json_Associationspartenaires_14, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_41Associationspartenaires_14',
-            layerName: 'layer_41Associationspartenaires_14',
-            pane: 'pane_41Associationspartenaires_14',
-            onEachFeature: pop_41Associationspartenaires_14,
+            dataVar: 'json_Associationspartenaires_14',
+            layerName: 'layer_Associationspartenaires_14',
+            pane: 'pane_Associationspartenaires_14',
+            onEachFeature: pop_Associationspartenaires_14,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_41Associationspartenaires_14_0(feature));
+                return L.circleMarker(latlng, style_Associationspartenaires_14_0(feature));
             },
         });
-        bounds_group.addLayer(layer_41Associationspartenaires_14);
-        map.addLayer(layer_41Associationspartenaires_14);
+        bounds_group.addLayer(layer_Associationspartenaires_14);
+        map.addLayer(layer_Associationspartenaires_14);
         function pop_CCASpartenaires41_15(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1024,7 +1028,7 @@
         });
         bounds_group.addLayer(layer_CCASpartenaires41_15);
         map.addLayer(layer_CCASpartenaires41_15);
-        function pop_Epiceriessocialespartenaires41_16(feature, layer) {
+        function pop_Epiceriessocialespartenaires_16(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Adresse</th>\
@@ -1054,9 +1058,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Epiceriessocialespartenaires41_16_0() {
+        function style_Epiceriessocialespartenaires_16_0() {
             return {
-                pane: 'pane_Epiceriessocialespartenaires41_16',
+                pane: 'pane_Epiceriessocialespartenaires_16',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(227,26,28,1.0)',
@@ -1070,27 +1074,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Epiceriessocialespartenaires41_16');
-        map.getPane('pane_Epiceriessocialespartenaires41_16').style.zIndex = 416;
-        map.getPane('pane_Epiceriessocialespartenaires41_16').style['mix-blend-mode'] = 'normal';
-        var layer_Epiceriessocialespartenaires41_16 = new L.geoJson(json_Epiceriessocialespartenaires41_16, {
+        map.createPane('pane_Epiceriessocialespartenaires_16');
+        map.getPane('pane_Epiceriessocialespartenaires_16').style.zIndex = 416;
+        map.getPane('pane_Epiceriessocialespartenaires_16').style['mix-blend-mode'] = 'normal';
+        var layer_Epiceriessocialespartenaires_16 = new L.geoJson(json_Epiceriessocialespartenaires_16, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Epiceriessocialespartenaires41_16',
-            layerName: 'layer_Epiceriessocialespartenaires41_16',
-            pane: 'pane_Epiceriessocialespartenaires41_16',
-            onEachFeature: pop_Epiceriessocialespartenaires41_16,
+            dataVar: 'json_Epiceriessocialespartenaires_16',
+            layerName: 'layer_Epiceriessocialespartenaires_16',
+            pane: 'pane_Epiceriessocialespartenaires_16',
+            onEachFeature: pop_Epiceriessocialespartenaires_16,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_Epiceriessocialespartenaires41_16_0(feature));
+                return L.circleMarker(latlng, style_Epiceriessocialespartenaires_16_0(feature));
             },
         });
-        bounds_group.addLayer(layer_Epiceriessocialespartenaires41_16);
-        map.addLayer(layer_Epiceriessocialespartenaires41_16);
-        function pop_Epiceriesitinrantespartenaires41_17(feature, layer) {
+        bounds_group.addLayer(layer_Epiceriessocialespartenaires_16);
+        map.addLayer(layer_Epiceriessocialespartenaires_16);
+        function pop_Epiceriesitinrantespartenaires_17(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Adresse</th>\
@@ -1120,9 +1124,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Epiceriesitinrantespartenaires41_17_0() {
+        function style_Epiceriesitinrantespartenaires_17_0() {
             return {
-                pane: 'pane_Epiceriesitinrantespartenaires41_17',
+                pane: 'pane_Epiceriesitinrantespartenaires_17',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
@@ -1132,26 +1136,26 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Epiceriesitinrantespartenaires41_17');
-        map.getPane('pane_Epiceriesitinrantespartenaires41_17').style.zIndex = 417;
-        map.getPane('pane_Epiceriesitinrantespartenaires41_17').style['mix-blend-mode'] = 'normal';
-        var layer_Epiceriesitinrantespartenaires41_17 = new L.geoJson(json_Epiceriesitinrantespartenaires41_17, {
+        map.createPane('pane_Epiceriesitinrantespartenaires_17');
+        map.getPane('pane_Epiceriesitinrantespartenaires_17').style.zIndex = 417;
+        map.getPane('pane_Epiceriesitinrantespartenaires_17').style['mix-blend-mode'] = 'normal';
+        var layer_Epiceriesitinrantespartenaires_17 = new L.geoJson(json_Epiceriesitinrantespartenaires_17, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Epiceriesitinrantespartenaires41_17',
-            layerName: 'layer_Epiceriesitinrantespartenaires41_17',
-            pane: 'pane_Epiceriesitinrantespartenaires41_17',
-            onEachFeature: pop_Epiceriesitinrantespartenaires41_17,
+            dataVar: 'json_Epiceriesitinrantespartenaires_17',
+            layerName: 'layer_Epiceriesitinrantespartenaires_17',
+            pane: 'pane_Epiceriesitinrantespartenaires_17',
+            onEachFeature: pop_Epiceriesitinrantespartenaires_17,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_Epiceriesitinrantespartenaires41_17_0(feature));
+                return L.marker(latlng, style_Epiceriesitinrantespartenaires_17_0(feature));
             },
         });
-        bounds_group.addLayer(layer_Epiceriesitinrantespartenaires41_17);
-        map.addLayer(layer_Epiceriesitinrantespartenaires41_17);
+        bounds_group.addLayer(layer_Epiceriesitinrantespartenaires_17);
+        map.addLayer(layer_Epiceriesitinrantespartenaires_17);
         function pop_BACVL_18(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1188,8 +1192,8 @@
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/BA fond blanc .svg',
-            iconSize: [45.59999999999999, 45.59999999999999]
+            iconUrl: 'markers/BA (entrepôt).svg',
+            iconSize: [22.799999999999997, 22.799999999999997]
         }),
                 interactive: true,
             }
@@ -1286,7 +1290,7 @@
         bounds_group.addLayer(layer_RgionCentreValdeLoire_20);
         map.addLayer(layer_RgionCentreValdeLoire_20);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/RgionCentreValdeLoire_20.png" /> Région Centre Val de Loire': layer_RgionCentreValdeLoire_20,'<img src="legend/LoiretCher_19.png" /> Loir et Cher ': layer_LoiretCher_19,'<img src="legend/BACVL_18.png" /> BA CVL': layer_BACVL_18,'<img src="legend/Epiceriesitinrantespartenaires41_17.png" /> Epiceries itinérantes partenaires 41': layer_Epiceriesitinrantespartenaires41_17,'<img src="legend/Epiceriessocialespartenaires41_16.png" /> Epiceries sociales partenaires 41': layer_Epiceriessocialespartenaires41_16,'<img src="legend/CCASpartenaires41_15.png" /> CCAS partenaires 41': layer_CCASpartenaires41_15,'<img src="legend/41Associationspartenaires_14.png" /> 41 Associations partenaires': layer_41Associationspartenaires_14,'<img src="legend/CroixRouge41_13.png" /> Croix Rouge 41': layer_CroixRouge41_13,'<img src="legend/SecoursCatholique41_12.png" /> Secours Catholique 41': layer_SecoursCatholique41_12,'<img src="legend/SSVP41_11.png" /> SSVP 41': layer_SSVP41_11,'<img src="legend/SecoursPopulaire41_10.png" /> Secours Populaire 41': layer_SecoursPopulaire41_10,'<img src="legend/RestosduCoeur41_9.png" /> Restos du Coeur 41': layer_RestosduCoeur41_9,'<img src="legend/Communesavecaidealimentaire_8.png" /> Communes avec aide alimentaire ': layer_Communesavecaidealimentaire_8,'<img src="legend/Zonesblanchesdelaidealimentaire_7.png" /> Zones blanches de l\'aide alimentaire ': layer_Zonesblanchesdelaidealimentaire_7,'<img src="legend/ZRR_6.png" /> ZRR ': layer_ZRR_6,'Médiane du niveau de vie (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_15430206480.png" /></td><td>15430 - 20648</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_20648217801.png" /></td><td>20648 - 21780</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_21780228642.png" /></td><td>21780 - 22864</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_22864241443.png" /></td><td>22864 - 24144</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_24144334404.png" /></td><td>24144 - 33440</td></tr></table>': layer_MdianeduniveaudevieLoiretCher_5,'Taux de chômage (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_0760.png" /></td><td>0 - 7,6</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_76971.png" /></td><td>7,6 - 9,7</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_971242.png" /></td><td>9,7 - 12,4</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_1244063.png" /></td><td>12,4 - 40,6</td></tr></table>': layer_TauxdechmageLoiretCher_4,'PAT (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_PaysValléeducheretduRomorantinais0.png" /></td><td>Pays Vallée du cher et du Romorantinais</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysdesChâteaux1.png" /></td><td>Syndicat Mixte du Pays des Châteaux</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysVendômois2.png" /></td><td>Syndicat Mixte du Pays Vendômois</td></tr></table>': layer_PATLoiretCher_3,'<img src="legend/CommunesLoiretCher_2.png" /> Communes - Loir et Cher ': layer_CommunesLoiretCher_2,'<img src="legend/EPCI41_1.png" /> EPCI 41': layer_EPCI41_1,"Google Road": layer_GoogleRoad_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/RgionCentreValdeLoire_20.png" /> Région Centre Val de Loire': layer_RgionCentreValdeLoire_20,'<img src="legend/LoiretCher_19.png" /> Loir et Cher ': layer_LoiretCher_19,'<img src="legend/BACVL_18.png" /> BA CVL': layer_BACVL_18,'<img src="legend/Epiceriesitinrantespartenaires_17.png" /> Epiceries itinérantes partenaires ': layer_Epiceriesitinrantespartenaires_17,'<img src="legend/Epiceriessocialespartenaires_16.png" /> Epiceries sociales partenaires ': layer_Epiceriessocialespartenaires_16,'<img src="legend/CCASpartenaires41_15.png" /> CCAS partenaires 41': layer_CCASpartenaires41_15,'<img src="legend/Associationspartenaires_14.png" /> Associations partenaires': layer_Associationspartenaires_14,'<img src="legend/CroixRouge_13.png" /> Croix Rouge ': layer_CroixRouge_13,'<img src="legend/SecoursCatholique_12.png" /> Secours Catholique': layer_SecoursCatholique_12,'<img src="legend/SSVP_11.png" /> SSVP ': layer_SSVP_11,'<img src="legend/SecoursPopulaire_10.png" /> Secours Populaire': layer_SecoursPopulaire_10,'<img src="legend/RestosduCoeur_9.png" /> Restos du Coeur': layer_RestosduCoeur_9,'<img src="legend/Communesavecaidealimentaire_8.png" /> Communes avec aide alimentaire ': layer_Communesavecaidealimentaire_8,'<img src="legend/Zonesblanchesdelaidealimentaire_7.png" /> Zones blanches de l\'aide alimentaire ': layer_Zonesblanchesdelaidealimentaire_7,'<img src="legend/ZRR_6.png" /> ZRR ': layer_ZRR_6,'Médiane du niveau de vie (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_15430206480.png" /></td><td>15430 - 20648</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_20648217801.png" /></td><td>20648 - 21780</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_21780228642.png" /></td><td>21780 - 22864</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_22864241443.png" /></td><td>22864 - 24144</td></tr><tr><td style="text-align: center;"><img src="legend/MdianeduniveaudevieLoiretCher_5_24144334404.png" /></td><td>24144 - 33440</td></tr></table>': layer_MdianeduniveaudevieLoiretCher_5,'Taux de chômage (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_0760.png" /></td><td>0 - 7,6</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_76971.png" /></td><td>7,6 - 9,7</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_971242.png" /></td><td>9,7 - 12,4</td></tr><tr><td style="text-align: center;"><img src="legend/TauxdechmageLoiretCher_4_1244063.png" /></td><td>12,4 - 40,6</td></tr></table>': layer_TauxdechmageLoiretCher_4,'PAT (Loir et Cher)<br /><table><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_PaysValléeducheretduRomorantinais0.png" /></td><td>Pays Vallée du cher et du Romorantinais</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysdesChâteaux1.png" /></td><td>Syndicat Mixte du Pays des Châteaux</td></tr><tr><td style="text-align: center;"><img src="legend/PATLoiretCher_3_SyndicatMixteduPaysVendômois2.png" /></td><td>Syndicat Mixte du Pays Vendômois</td></tr></table>': layer_PATLoiretCher_3,'<img src="legend/CommunesLoiretCher_2.png" /> Communes - Loir et Cher ': layer_CommunesLoiretCher_2,'<img src="legend/EPCI41_1.png" /> EPCI 41': layer_EPCI41_1,"Google Road": layer_GoogleRoad_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
